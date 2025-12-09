@@ -1,27 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Premium Pharma Palette - ROYAL LUXURY */
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F8FAFC;
+  /* Slate 50 - Cleaner & cooler than Sky 50 */
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  /* Royal Blues - Deep, Professional, Corporate */
+  --color-primary: #0F172A;
+  /* Slate 900 - Deep Navy (Primary brand color) */
+  --color-primary-dark: #020617;
+  /* Slate 950 - Almost Black Navy */
+  --color-primary-light: #334155;
+  /* Slate 700 - Muted Professional Blue */
+  --color-accent: #2563EB;
+  /* Royal Blue (Vibrant Accent only) */
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-primary-glow: rgba(37, 99, 235, 0.15);
+  /* Subtle Royal Blue Glow */
+
+  --color-text: #020617;
+  /* Intense Black/Blue for max contrast */
+  --color-text-muted: #64748B;
+  /* Slate 500 - Refined muted text */
+  --color-text-light: #FFFFFF;
+
+  /* Ultra-Glass - High End & Minimalist */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  /* More transparent */
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03),
+    0 0 0 1px rgba(0, 0, 0, 0.02);
+  /* Multi-layer depth */
+  --glass-blur: 20px;
+  /* Heavy luxury blur */
+
+  --nav-height: 80px;
 }
 
 * {
@@ -30,13 +51,115 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-pattern {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  /* Sophisticated architectural grid */
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  /* Larger, more substantial click targets */
+  border-radius: 12px;
+  /* Slightly squarer, more modern than full pills */
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  /* Premium spacing */
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.4);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.5);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  /* Thin, elegant border */
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--color-primary-dark);
+  box-shadow: var(--glass-shadow);
+}
+
+.btn-glass:hover {
+  background: #ffffff;
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+.section-padding {
+  padding: 120px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+p {
+  line-height: 1.7;
 }
