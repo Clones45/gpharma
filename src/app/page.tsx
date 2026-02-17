@@ -54,7 +54,7 @@ export default function Home() {
               {/* Main Floating Card - replaced with Image */}
               <div className="absolute inset-4 bg-white/5 backdrop-blur-md rounded-[3rem] shadow-2xl border border-white/10 flex items-center justify-center p-4 z-10 transform hover:scale-[1.01] transition-all duration-700 overflow-hidden">
                 <img
-                  src="/assets/Gemini_Generated_Image_mjzfx4mjzfx4mjzf.png"
+                  src="/assets/product.png"
                   alt="UltraPure Water System"
                   className="w-full h-full object-cover rounded-[2.5rem] shadow-2xl opacity-90 group-hover:opacity-100 transition-opacity"
                 />

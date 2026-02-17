@@ -17,7 +17,7 @@ export default function Footer() {
                                     src="/assets/logo.png"
                                     alt="Grely's Pharma Logo"
                                     fill
-                                    className="object-contain invert brightness-0 filter opacity-90"
+                                    className="object-contain opacity-90"
                                 />
                             </div>
                             <span className="text-xl font-bold text-white tracking-tight">Grely’s Pharma</span>
@@ -62,17 +62,18 @@ export default function Footer() {
                     <div>
                         <h4 className="font-heading font-bold text-white mb-6 text-sm uppercase tracking-wider">Contact Us</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li className="flex items-start gap-3 group cursor-default">
-                                <MapPin className="w-5 h-5 text-blue-500 shrink-0 group-hover:animate-bounce" />
-                                <span>Lim 3rd Street, Digos City, Davao del Sur, 8002</span>
-                            </li>
+
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
                                 <span className="hover:text-blue-400 cursor-pointer transition-colors">info@grelyspharma.com</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-blue-500 shrink-0" />
-                                <span>(082) 555-1234</span>
+                                <span>WhatsApp: +639055558267</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Phone className="w-5 h-5 text-blue-500 shrink-0" />
+                                <span>Viber: +639055558267</span>
                             </li>
                         </ul>
                     </div>

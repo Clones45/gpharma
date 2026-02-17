@@ -38,9 +38,7 @@ export default function AboutPage() {
                                     </div>
                                     <h3 className="text-xl font-bold text-white">Headquarters</h3>
                                 </div>
-                                <p className="text-slate-400 mb-8 leading-relaxed">
-                                    Lim 3rd Street, Digos City,<br />Davao del Sur, 8002
-                                </p>
+
                                 <div className="w-full h-64 bg-slate-950 rounded-2xl overflow-hidden relative border border-slate-800 group cursor-pointer">
                                     <img
                                         src="/assets/Gemini_Generated_Image_d0bjupd0bjupd0bj.png"

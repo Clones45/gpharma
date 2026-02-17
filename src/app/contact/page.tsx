@@ -30,17 +30,18 @@ export default function ContactPage() {
                     {/* Contact Info Cards */}
                     <div className="space-y-8">
                         {[
+
                             {
-                                icon: MapPin,
-                                title: 'Visit Our Office',
-                                content: 'Lim 3rd Street, Digos City, Davao del Sur, 8002',
-                                action: 'Get Directions'
+                                icon: Phone, // Using Phone icon as generic communication icon
+                                title: 'WhatsApp',
+                                content: '+639055558267',
+                                action: 'Message on WhatsApp'
                             },
                             {
-                                icon: Phone,
-                                title: 'Call Us Directly',
-                                content: '(082) 555-1234',
-                                action: 'Call Now'
+                                icon: Phone, // Using Phone icon as generic communication icon
+                                title: 'Viber',
+                                content: '+639055558267',
+                                action: 'Message on Viber'
                             },
                             {
                                 icon: Mail,

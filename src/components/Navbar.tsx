@@ -34,7 +34,7 @@ export default function Navbar() {
                             src="/assets/logo.png"
                             alt="Grely's Pharma Logo"
                             fill
-                            className="object-contain invert brightness-0 filter"
+                            className="object-contain"
                             priority
                         />
                     </div>
