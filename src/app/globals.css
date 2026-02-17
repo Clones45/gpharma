@@ -6,41 +6,44 @@
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-heading: 'Outfit', sans-serif;
 
-  /* Premium Pharma Palette - ROYAL LUXURY */
-  --color-bg: #FFFFFF;
-  --color-bg-alt: #F8FAFC;
-  /* Slate 50 - Cleaner & cooler than Sky 50 */
+  /* Premium Pharma Palette - DARK LUXURY */
+  /* Deep Navy Backgrounds */
+  --color-bg: #020617;
+  /* Slate 950 */
+  --color-bg-alt: #0F172A;
+  /* Slate 900 */
 
-  /* Royal Blues - Deep, Professional, Corporate */
-  --color-primary: #0F172A;
-  /* Slate 900 - Deep Navy (Primary brand color) */
-  --color-primary-dark: #020617;
-  /* Slate 950 - Almost Black Navy */
-  --color-primary-light: #334155;
-  /* Slate 700 - Muted Professional Blue */
-  --color-accent: #2563EB;
-  /* Royal Blue (Vibrant Accent only) */
+  /* Text Colors */
+  --color-text: #F8FAFC;
+  /* Slate 50 - High contrast reading */
+  --color-text-muted: #94A3B8;
+  /* Slate 400 - Readable secondary text */
+  --color-text-light: #E2E8F0;
+  /* Slate 200 */
 
-  --color-primary-glow: rgba(37, 99, 235, 0.15);
-  /* Subtle Royal Blue Glow */
+  /* Accents */
+  --color-primary: #3B82F6;
+  /* Blue 500 - Brighter for dark mode visibility */
+  --color-primary-dark: #2563EB;
+  /* Blue 600 */
+  --color-primary-light: #60A5FA;
+  /* Blue 400 */
+  --color-accent: #06B6D4;
+  /* Cyan 500 - Vibrant accent */
 
-  --color-text: #020617;
-  /* Intense Black/Blue for max contrast */
-  --color-text-muted: #64748B;
-  /* Slate 500 - Refined muted text */
-  --color-text-light: #FFFFFF;
+  --color-primary-glow: rgba(59, 130, 246, 0.25);
+  /* Stronger glow for dark mode */
 
-  /* Ultra-Glass - High End & Minimalist */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  /* More transparent */
-  --glass-border: rgba(255, 255, 255, 0.8);
+  /* Glassmorphism - Dark Frost */
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  /* Dark slate semi-transparent */
+  --glass-border: rgba(255, 255, 255, 0.1);
+  /* Subtle white border */
   --glass-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03),
-    0 0 0 1px rgba(0, 0, 0, 0.02);
-  /* Multi-layer depth */
-  --glass-blur: 20px;
-  /* Heavy luxury blur */
+    0 4px 6px -1px rgba(0, 0, 0, 0.5),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
+  --glass-blur: 16px;
 
   --nav-height: 80px;
 }
@@ -157,7 +160,7 @@ h6 {
   font-family: var(--font-heading);
   line-height: 1.1;
   font-weight: 700;
-  color: var(--color-primary-dark);
+  color: var(--color-text-light);
 }
 
 p {

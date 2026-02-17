@@ -14,7 +14,7 @@ export default function Hero() {
                 <div className={styles.logoWrapper}>
                     <Image
                         src="/assets/logo.png"
-                        alt="Grely's Pharma"
+                        alt="Grely&apos;s Pharma"
                         width={120}
                         height={120}
                         className={styles.logoLg}
@@ -23,7 +23,7 @@ export default function Hero() {
                 </div>
 
                 <h1 className={styles.title}>
-                    Grely's Pharma Enterprise INC
+                    Grely&apos;s Pharma Enterprise INC
                 </h1>
 
                 <p className={styles.subtitle}>
